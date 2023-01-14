@@ -10,10 +10,16 @@
 // @supportURL   https://github.com/GyanguStar/BiliRandomPlay
 // @license      GPLv3
 // @run-at       document-idle
+// @grant        GM_registerMenuCommand
 // ==/UserScript==
 
 (function () {
     'use strict';
+    GM_registerMenuCommand("调整视频音量", () => {
+        let volume = Number(prompt("请输入音量(0-100)"))
+        if (!Number.isNaN(volume) && volume >= 0 && volume <= 100)
+        document.querySelector("bwp-video").volume = volume / 100
+    });
     if (document.getElementById("multi_page")) {
         const utils = {
             parseInfo: text => {

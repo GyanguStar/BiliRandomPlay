@@ -67,7 +67,7 @@
             else {
                 randomSpan.innerHTML = '<span class="txt">随机播放</span> <span id="random-switch" class="switch-button" style="margin-right: 4px;"></span>'
             }
-            document.querySelector("#multi_page > div.head-con > div.head-right").insertBefore(document.querySelector("#multi_page > div.head-con > div.head-right > span.next-button"))
+            document.querySelector("#multi_page > div.head-con > div.head-right").insertBefore(randomSpan, document.querySelector("#multi_page > div.head-con > div.head-right > span.next-button"))
             document.querySelector('#random-switch').addEventListener("click", function () {
                 switchOn = !switchOn
                 if (switchOn) {

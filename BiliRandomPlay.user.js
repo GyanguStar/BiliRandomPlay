@@ -3,7 +3,7 @@
 // @namespace    https://github.com/GyanguStar
 // @version      0.3.0
 // @description  B站分P视频随机播放
-// @author       GyanguStar
+// @author       GyanguStar & 琴梨梨
 // @match        https://www.bilibili.com/video/*
 // @icon         https://www.bilibili.com/favicon.ico
 // @homepage     https://github.com/GyanguStar/BiliRandomPlay

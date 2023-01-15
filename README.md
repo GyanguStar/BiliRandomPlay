@@ -1,3 +1,7 @@
 # BiliRandomPlay
-随机播放b站多p视频（小可...嘿嘿🤤🤤...阿梓...嘿嘿🤤🤤...笙歌...嘿嘿🤤🤤...）  
-https://greasyfork.org/zh-CN/scripts/441632
+
+油猴脚本: B站分P视频随机播放
+
+forked from [https://github.com/qinlili23333/BiliRandomPlay](https://github.com/qinlili23333/BiliRandomPlay)
+
+打开 [https://github.com/GyanguStar/BiliRandomPlay/raw/main/BiliRandomPlay.user.js](https://github.com/GyanguStar/BiliRandomPlay/raw/main/BiliRandomPlay.user.js) 以添加脚本到油猴.

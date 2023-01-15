@@ -60,11 +60,12 @@
         }
         setTimeout(() => {
             const randomSpan = document.createElement("span")
+            randomSpan.className = "next-button"
             if (switchOn) {
-                randomSpan.outerHTML = '<span class="next-button"><span class="txt">随机播放</span> <span id="random-switch" class="switch-button on" style="margin-right: 4px;"></span></span>'
+                randomSpan.innerHTML = '<span class="txt">随机播放</span> <span id="random-switch" class="switch-button on" style="margin-right: 4px;"></span>'
             }
             else {
-                randomSpan.outerHTML = '<span class="next-button"><span class="txt">随机播放</span> <span id="random-switch" class="switch-button" style="margin-right: 4px;"></span></span>'
+                randomSpan.innerHTML = '<span class="txt">随机播放</span> <span id="random-switch" class="switch-button" style="margin-right: 4px;"></span>'
             }
             document.querySelector("#multi_page > div.head-con > div.head-right").insertBefore(document.querySelector("#multi_page > div.head-con > div.head-right > span.next-button"))
             document.querySelector('#random-switch').addEventListener("click", function () {

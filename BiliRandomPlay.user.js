@@ -18,7 +18,7 @@
     GM_registerMenuCommand("调整视频音量", () => {
         let volume = Number(prompt("请输入音量(0-100)"))
         if (!Number.isNaN(volume) && volume >= 0 && volume <= 100)
-        document.querySelector("bwp-video").volume = volume / 100
+            document.querySelector("bwp-video").volume = volume / 100
     });
     if (document.getElementById("multi_page")) {
         const utils = {
@@ -59,12 +59,14 @@
             switchOn = true
         }
         setTimeout(() => {
+            const randomSpan = document.createElement("span")
             if (switchOn) {
-                document.querySelector("#multi_page > div.head-con > div.head-right").innerHTML = '<span class="next-button"><span class="txt">随机播放</span> <span id="random-switch" class="switch-button on" style="margin-right: 4px;"></span></span>' + document.querySelector("#multi_page > div.head-con > div.head-right").innerHTML;
+                randomSpan.outerHTML = '<span class="next-button"><span class="txt">随机播放</span> <span id="random-switch" class="switch-button on" style="margin-right: 4px;"></span></span>'
             }
             else {
-                document.querySelector("#multi_page > div.head-con > div.head-right").innerHTML = '<span class="next-button"><span class="txt">随机播放</span> <span id="random-switch" class="switch-button" style="margin-right: 4px;"></span></span>' + document.querySelector("#multi_page > div.head-con > div.head-right").innerHTML;
+                randomSpan.outerHTML = '<span class="next-button"><span class="txt">随机播放</span> <span id="random-switch" class="switch-button" style="margin-right: 4px;"></span></span>'
             }
+            document.querySelector("#multi_page > div.head-con > div.head-right").insertBefore(document.querySelector("#multi_page > div.head-con > div.head-right > span.next-button"))
             document.querySelector('#random-switch').addEventListener("click", function () {
                 switchOn = !switchOn
                 if (switchOn) {
@@ -73,7 +75,7 @@
                 else {
                     this.className = "switch-button"
                 }
-                random();
+                random()
             })
             random();
             document.querySelector("#multi_page > div.cur-list").addEventListener("click", () => {

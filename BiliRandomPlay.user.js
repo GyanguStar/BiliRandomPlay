@@ -60,10 +60,10 @@
         }
         setTimeout(() => {
             if (switchOn) {
-                document.querySelector("#multi_page > div.head-con > div.head-right").innerHTML = '<span class="next-button"><span class="txt">随机播放</span> <span id="random-switch" class="switch-button on"></span></span>' + document.querySelector("#multi_page > div.head-con > div.head-right").innerHTML;
+                document.querySelector("#multi_page > div.head-con > div.head-right").innerHTML = '<span class="next-button"><span class="txt">随机播放</span> <span id="random-switch" class="switch-button on" style="margin-right: 4px;"></span></span>' + document.querySelector("#multi_page > div.head-con > div.head-right").innerHTML;
             }
             else {
-                document.querySelector("#multi_page > div.head-con > div.head-right").innerHTML = '<span class="next-button"><span class="txt">随机播放</span> <span id="random-switch" class="switch-button"></span></span>' + document.querySelector("#multi_page > div.head-con > div.head-right").innerHTML;
+                document.querySelector("#multi_page > div.head-con > div.head-right").innerHTML = '<span class="next-button"><span class="txt">随机播放</span> <span id="random-switch" class="switch-button" style="margin-right: 4px;"></span></span>' + document.querySelector("#multi_page > div.head-con > div.head-right").innerHTML;
             }
             document.querySelector('#random-switch').addEventListener("click", function () {
                 switchOn = !switchOn

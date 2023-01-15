@@ -90,7 +90,7 @@
                 searchParams.set('random', 'on');
                 originPush.call(history, {}, '', location.pathname + "?" + searchParams.toString())
             } else {
-                searchParams.set('random', 'off');
+                searchParams.delete('random');
                 originPush.call(history, {}, '', location.pathname + "?" + searchParams.toString())
             }
         }

@@ -73,6 +73,7 @@
                 else {
                     this.className = "switch-button"
                 }
+                random();
             })
             random();
             document.querySelector("#multi_page > div.cur-list").addEventListener("click", () => {

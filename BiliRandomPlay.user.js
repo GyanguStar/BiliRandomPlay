@@ -16,7 +16,7 @@
 (function () {
     'use strict';
     GM_registerMenuCommand("调整视频音量", () => {
-        const curVolume = Math.round(document.querySelector("bwp-video").volume * 100)
+        const curVolume = Math.round(document.querySelector("video").volume * 100)
         const volumeStr = prompt("请输入音量(0-100)", curVolume)
         if (volumeStr === '') return
         let volume = Number(volumeStr)
